@@ -1,0 +1,405 @@
+@font-face {
+    font-family: 'Poets';
+    src: url('../fonts/PoetsenOne-Regular.ttf');
+}
+
+.input-control{
+    border: none;
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: 'TitilliumText25L600wt', serif;
+    width: 89%;
+}
+
+#contact-message{
+    height: 100px;
+}
+.centered{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.input-label{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: 'TitilliumText25L600wt', serif;
+    font-size: 18px;
+    color: #ffb400;
+}
+
+.input-submit{
+    background-color: #ffb400;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    color: #fff;
+    font-family: BebasNeueRegular;
+    font-size: 24px;
+    display: block;
+    float: right;
+    cursor: pointer;
+    cursor: hand;
+}
+
+#contact-form{
+    padding-left: 16%;
+    padding-right: 16%;
+    border-left: solid 1px rgb(122, 119, 117);
+}
+
+.row-fluid .col8{
+    display: block;
+    float: left;
+    width: 60%;
+    margin-left: 10%;
+}
+
+.row-fluid .col4{
+    display: block;
+    float: left;
+    width: 30%;
+}
+
+.features li{
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 700px){
+    #contact-form{
+        padding: 0;
+    }
+    .input-control{
+        width: 80%;
+    }
+}
+
+.cn_content.bg-1{
+    background-image: url('http://assets.winspireme.com/packages/1332-1332_London-Paris-Luxury-Stay-MAIN.jpg');
+    background-size: cover;
+}
+
+.cn_content.bg-2{
+    background-image: url('../img/football_camp.jpg');
+    background-size: cover;
+}
+
+.cn_content.bg-3{
+    background-image: url('http://international.appstate.edu/sites/international.appstate.edu/files/education-abroad/isesa/departure-sign.jpg');
+    background-size: cover;
+}
+
+.cn_content.bg-4{
+    background-image: url('../img/lar_city_v3.jpg');
+    background-size: cover;
+}
+
+.row-fluid .col3{
+    display: block;
+    float: left;
+    width: 23.33%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+}
+
+.my-highlight{
+    color: rgb(255, 180, 0);
+    font-weight: bold;
+}
+
+.caption.h3{
+    color: rgb(255, 180, 0);
+}
+
+.justify{
+    text-align: justify;
+}
+
+.orange{
+    color: rgb(255, 180, 0);
+}
+
+.soc-icon{
+    font-size: 60px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.soc-icon:hover{
+    background-color: #707070;
+    color: white !important;
+    transition-duration: 0.5s;
+}
+.soc-icon a{
+    color: inherit;
+}
+
+.soc-icon a:visited{
+    color: inherit;
+}
+
+.soc-icon.fb{
+    color: #3A5795;
+}
+
+.soc-icon.in{
+    color: #C4996C;
+}
+
+.contact-list{
+    font-size: 30px;
+}
+
+.contact-title{
+    color: rgb(255, 180, 0);
+    margin-bottom: 0;
+    font-size: 38px;
+}
+
+.logo-container img{
+    height: 40px;
+    margin-right: 20px;
+}
+
+.no-margin{
+    margin: 0 !important;
+}
+.london-central h3,.london-central h2 {
+    color: #001b4e;
+    font-family: Poets, BebasNeueRegular, sans-serif;
+}
+
+.alojamiento h5{
+    font-family: Poets, BebasNeueRegular, sans-serif;
+}
+
+.london-eltham h3,.london-eltham h2 {
+    color: rgb(207, 20, 43);
+    font-family: Poets, BebasNeueRegular, sans-serif;
+}
+
+.cambridge h3, .cambridge h2{
+    font-family: Poets, BebasNeueRegular, sans-serif;
+    color: rgb(1, 103, 188);
+}
+
+.agenda-banner{
+    font-family: Arial, sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-size: 60px;
+    text-align: center;
+    padding: 40px;
+    text-shadow: 2px 2px 10px #000000;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.agenda-banner.ab-2{
+    background-image: url("../img/agenda_banner.jpg");
+    background-position-y: -100px;
+
+}
+
+.agenda-banner.ab-1{
+    background: url("../img/agenda_banner_2.jpg") no-repeat;
+    background-position-y: -100px;
+    background-size: 100%;
+}
+
+.agenda-banner.ab-3{
+    background: url("../img/agenda_banner_3.jpg") no-repeat;
+    background-position-y: -100px;
+    background-size: 100%;
+}
+
+.cn_content .caption h3{
+    color: #2AC294;
+    font-size: 25px;
+}
+
+.cn_content .caption p{
+    font-size: 16px;
+}
+
+.main.programas li{
+    text-align: justify
+}
+.main.programas.col8 p{
+    text-align: justify
+}
+.margin-left-10{
+    margin-left: 10px;
+}
+
+article .cat-post-desc .date{
+    font-size: 14px;
+}
+
+article.small .cat-post-desc h3 {
+    font-size: 20px;
+}
+
+.cn_item h4{
+    font-size: 16px;
+}
+
+.cn_content .caption, .cn_content .caption .date{
+    height: 110px;
+}
+
+.cn_content .caption .date p{
+    padding-top: 40px;
+}
+
+.agenda .ag-heading{
+    line-height: 18px;
+    font-size: 20px;
+    font-family: 'TitilliumText25L999wt';
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.agenda p{
+    color: rgb(134, 134, 134);;
+    line-height: 16px;
+    
+}
+
+.agenda .date{
+    color: #e9b229;
+    padding-bottom: 0;
+}
+
+.widget.double{
+    width: 62%;
+}
+
+.paris h3,.paris h2 {
+    color: #e9b229;
+    font-family: Poets, BebasNeueRegular, sans-serif;
+}
+
+.florence h3,.florence h2 {
+    color: #009246;
+    font-family: Poets, BebasNeueRegular, sans-serif;
+}
+
+.border{
+    border: solid 1px #f0f0f0 !important;
+}
+
+.alert-error, .alert-success{
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.yellow{
+    background-color: #e9b229;
+    font-weight: bolder;
+    font-size: 14px;
+    color: #2c2c2c;
+    padding: 5px;
+    text-align: center;
+}
+.margin-top-30{
+    margin-top: 30px;
+}
+
+.countries{
+    background-image: url("../img/cork.jpg");
+    background-size: 250px;
+    height: 180px;
+    width: 100%;
+    text-align: justify;
+}
+
+.countries-container{
+    padding: 40px;
+}
+
+.flag{
+    width: 200px;
+    height: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.country-title{
+    background-color: #222222;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.country-title h3{
+    margin: 0;
+    color: white;
+}
+
+.country-content{
+    background-color: #dddddd;
+}
+
+.country-content .row-fluid{
+    padding: 20px !important;
+}
+
+.country-content .width-20p{
+    width: 25%;
+    display: inline-block;
+}
+
+.country-content .width-80p{
+    background-color: #fdffbd;
+    display: inline-block;
+    padding: 20px;
+    width: 68%;
+    vertical-align: top;
+}
+
+.country-content .width-20p h6{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #24c0ff;
+}
+
+.tip-index{
+    padding: 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+    background-color: #3c3c3c;
+}
+
+.tip-index li{
+    margin-bottom: 5px;
+    padding: 5px 5px 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.tip-index li:hover{
+    -moz-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+    background-color: #24c0ff;
+    color: white;
+}
+
+.footer-top .widget .desc p {
+    color: #E7E7E7;
+    font-size: 16px;
+    line-height: 17px;
+}
+
+ul.info * {
+    font-size: 16px !important;
+    color: rgb(231, 231, 231) !important;
+}

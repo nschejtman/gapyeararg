@@ -1,0 +1,66 @@
+@(message :String, isError :Boolean)
+@nav() {
+    <!-- start div #main-title -->
+    <div class="main-title">
+        <p>contacto</p>
+    </div>
+    <!-- end div #main-title -->
+
+    <!-- start div #main -->
+    <div id="main">
+        <div class="main-content">
+            @if(message != null){
+                <div class="row-fluid">
+                    @if(isError) {
+                        <div class="alert-error">
+                            @message
+                        </div>
+                    } else {
+                        <div class="alert-success">
+                            @message
+                        </div>
+                    }
+                </div>
+            }
+
+            <div class="row-fluid">
+                <div class="span2">
+                    <ul class="contact-list">
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li><h3 class="contact-title">Telefono 1 (Lunes a jueves de 14 a 20)</h3></li>
+                        <li><i class="fa fa-phone"></i> (011) 4301-9382 </li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li><h3 class="contact-title">Telefono 2</h3></li>
+                        <li><i class="fa fa-mobile"></i> (011) 154 143 6479</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li><h3 class="contact-title">Email</h3></li>
+                        <li><i class="fa fa-envelope-o"></i> info@@gapyearargentina.com </li>
+                    </ul>
+
+
+
+                </div>
+                <div class="span2">
+                    <form id="contact-form" action="@routes.Application.contactoSubmit()" method="post">
+                        <h4>Envianos un mensaje</h4>
+                        <label for="contact-name" class="input-label">
+                            Nombre</label><input id="contact-name" type="text" class="input-control centered" name="nombre">
+                        <label for="contact-email" class="input-label">
+                            Email</label><input id="contact-email" type="email" class="input-control centered" name="email">
+                        <label for="contact-message" class="input-label">
+                            Mensaje</label><textarea id="contact-message" class="input-control centered" name="mensaje"></textarea>
+                        <button type="submit" class="input-submit">Enviar</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+}
