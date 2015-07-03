@@ -355,7 +355,7 @@ article.small .cat-post-desc h3 {
 }
 
 .country-content .width-80p{
-    background-color: #fdffbd;
+    background-color: rgba(255, 180, 0, 0.74);
     display: inline-block;
     padding: 20px;
     width: 68%;
@@ -402,4 +402,17 @@ article.small .cat-post-desc h3 {
 ul.info * {
     font-size: 16px !important;
     color: rgb(231, 231, 231) !important;
+}
+
+#tips .country-content .row-fluid{
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+}
+
+.my-hidden{
+    display: none;
+}
+
+#eng-tips a{
+    color: inherit;
 }

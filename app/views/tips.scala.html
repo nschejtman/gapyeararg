@@ -1,65 +1,138 @@
 @()
-@nav() {
+@js = {
+    <script>
+        var $engTips = $('#eng-tips');
+        $engTips.find('ul li a').click(function(){
+            ($($($engTips.parent()).parent()).find('.tip')).css("display", "none");
+            var linkHref = $(this).attr("href");
+            $(linkHref).css("display", "inline-block");
+        })
+    </script>
+}
+@nav(js=js) {
+    <div id="tips">
+            <!-- start div #main-title -->
+        <div class="main-title">
+            <p>tips</p>
+        </div>
+            <!-- end div #main-title -->
 
-    <!-- start div #main-title -->
-    <div class="main-title">
-        <p>tips</p>
-    </div>
-    <!-- end div #main-title -->
+            <!-- start div #main -->
+        <div id="main">
+            <div class="main-content">
+                <div class="countries">
+                    <div class="countries-container">
+                        <img class="flag" src="@routes.Assets.at("img/uk_flag.png")">
+                        <img class="flag" src="@routes.Assets.at("img/fr_flag.jpg")">
+                        <img class="flag" src="@routes.Assets.at("img/it_flag.png")">
+                    </div>
+                </div>
+                <div class="country" id="country-england">
+                    <div class="country-title">
+                        <h3>Inglaterra</h3>
+                    </div>
+                    <div class="country-content">
+                        <div class="row-fluid">
+                            <div class="width-20p">
+                                <h6>Listado de tips</h6>
+                            </div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="width-20p">
+                                <div id="eng-tips">
+                                    <ul class="tip-index">
+                                        <li><a href="#precios-tip" data-toggle="tab">Idea de precios</a></li>
+                                        <li><a href="#transporte-tip" data-toggle="tab">Transporte</a></li>
+                                        <li><a href="#shopping-tip" data-toggle="tab">Shopping</a></li>
+                                        <li><a href="#viveres-tip" data-toggle="tab">Víveres y provisiones</a></li>
+                                        <li><a href="#turismo-tip" data-toggle="tab">Turismo</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="width-80p tip" id="precios-tip">
+                                <h6>Idea de precios</h6>
+                                <p>
+                                    Viaje en colectivo: € 4<br>
+                                    Entrada a una disco: € 15<br>
+                                    Un refresco: € 1,50<br>
+                                    Un café: € 2,50<br>
+                                    Una cena: € 10<br>
+                                    Comida rápida: € 5<br>
+                                    Entrada al cine: € 10<br>
+                                    Transporte público: € 35/semana aprox.<br>
+                                </p>
+                            </div>
+                            <div class="width-80p tip" id="transporte-tip">
+                                <h6>Transporte</h6>
+                                <p>
+                                    Una opción es comprar una Oyster Card (tipo SUBE) e ir cargándola según
+                                    sea necesario. La otra opción es comprar un Travel card por 1 día, o una semanal, etc.
+                                    cuyo precio es fijo independientemente de cuantos viajes se hagan. Es importante sacar
+                                    la travel card para zonas 1,2 y 3 por lo menos, así incluye todos los lugares más
+                                    populares de Londres. En ambos casos, las tarjetas sirven para viajar en colectivo, subte
+                                    y tren.
+                                </p>
+                            </div>
+                            <div class="width-80p tip" id="shopping-tip">
+                                <h6>Shopping</h6>
+                                <p>
+                                    Primark, en Oxford Street cerca de Tottenham Court Road o en Oxford
+                                    Street del lado de Marble Arch. Ideal para comprar básicos (jeans, remeras, medias,
+                                    buzos, zapatillas, etc) a súper buenos precios.<br>
 
-    <!-- start div #main -->
-    <div id="main">
-        <div class="main-content">
-            <div class="countries">
-                <div class="countries-container">
-                    <img class="flag" src="@routes.Assets.at("img/uk_flag.png")">
-                    <img class="flag" src="@routes.Assets.at("img/fr_flag.jpg")">
-                    <img class="flag" src="@routes.Assets.at("img/it_flag.png")">
-                </div>
-            </div>
-            <div class="country">
-                <div class="country-title">
-                    <h3>Inglaterra</h3>
-                </div>
-                <div class="country-content">
-                    <div class="row-fluid">
-                        <div class="width-20p">
-                            <h6>Listado de tips</h6>
-                            <ul class="tip-index">
-                                <li>Comer</li>
-                                <li>Salir</li>
-                                <li>Tomar</li>
-                                <li>Museos</li>
-                            </ul>
+                                    H&M: En Oxford Circus. Ropa canchera a muy buenos precios.<br>
+
+                                    Waterstone’s: Cadena de librerías con gran variedad de libros, autores y géneros. Hay
+                                    una en todos lados.
+                                </p>
+                            </div>
+                            <div class="width-80p tip" id="viveres-tip">
+                                <h6>Viveres y provisiones</h6>
+                                <p>
+                                    Boots: Mega farmacia y perfumería donde se puede comprar de todo. Imposible no
+                                    encontrar una en cada barrio.<br>
+
+                                    Tesco: Supermercado con buenos precios donde también se puede comprar comida ya
+                                    preparada, tipo rotisería.<br>
+                                </p>
+                            </div>
+                            <div class="width-80p tip" id="turismo-tip">
+                                <h6>Turismo</h6>
+                                <p>
+                                    Fortnum & Mason: donde la reina solía ir a tomar el té. Esta
+                                    emblemática tienda es famosa por su elegante sección de alimentos, frutas y verduras.<br>
+
+                                    Notting Hill: El Travel Bookshop de la película donde Hugh Grant conoce a Julia
+                                    Roberts. Está tal cual.<br>
+
+                                    Chelsea Stadium: Un tour por la cancha y vestuarios del Chelsea es un excelente
+                                    programa. La tienda al final del tour es el lugar para comprar remeras, medias, shorts, y
+                                    todo lo que se te ocurra con los colores del equipo.<br>
+                                </p>
+                            </div>
                         </div>
-                        <div class="width-80p">
-                            <h6>Comer</h6>
-                            <p>loradasd asd asd asd asd asdasd asdasd asd asd asd asd asd </p>
-                        </div>
+                    </div>
+                </div>
+                <div class="country">
+                    <div class="country-title">
+                        <h3>Francia</h3>
+                    </div>
+                    <div class="country-content">
+                        <br>
+                    </div>
+                </div>
+                <div class="country">
+                    <div class="country-title">
+                        <h3>Italia</h3>
+                    </div>
+                    <div class="country-content">
+                        <br>
 
                     </div>
                 </div>
             </div>
-            <div class="country">
-                <div class="country-title">
-                    <h3>Francia</h3>
-                </div>
-                <div class="country-content">
-                    <br>
-                </div>
-            </div>
-            <div class="country">
-                <div class="country-title">
-                    <h3>Italia</h3>
-                </div>
-                <div class="country-content">
-                    <br>
-
-                </div>
-            </div>
         </div>
+            <!-- end div #main -->
+
     </div>
-    <!-- end div #main -->
-
-
 }
