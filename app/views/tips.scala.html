@@ -1,15 +1,21 @@
 @()
 @js = {
+    <!--suppress ALL -->
     <script>
         var $engTips = $('#eng-tips');
-        $engTips.find('ul li a').click(function(){
+
+        $(document).ready(function(){
+        $engTips.find('ul a').first().click();
+
+        });
+        $engTips.find('ul a').click(function(){
             ($($($engTips.parent()).parent()).find('.tip')).css("display", "none");
             var linkHref = $(this).attr("href");
             $(linkHref).css("display", "inline-block");
         })
     </script>
 }
-@nav(js=js) {
+@nav(js = js) {
     <div id="tips">
             <!-- start div #main-title -->
         <div class="main-title">
@@ -41,11 +47,11 @@
                             <div class="width-20p">
                                 <div id="eng-tips">
                                     <ul class="tip-index">
-                                        <li><a href="#precios-tip" data-toggle="tab">Idea de precios</a></li>
-                                        <li><a href="#transporte-tip" data-toggle="tab">Transporte</a></li>
-                                        <li><a href="#shopping-tip" data-toggle="tab">Shopping</a></li>
-                                        <li><a href="#viveres-tip" data-toggle="tab">Víveres y provisiones</a></li>
-                                        <li><a href="#turismo-tip" data-toggle="tab">Turismo</a></li>
+                                        <a href="#precios-tip" data-toggle="tab"><li>Idea de precios</li></a>
+                                        <a href="#transporte-tip" data-toggle="tab"><li>Transporte</li></a>
+                                        <a href="#shopping-tip" data-toggle="tab"><li>Shopping</li></a>
+                                        <a href="#viveres-tip" data-toggle="tab"><li>Víveres y provisiones</li></a>
+                                        <a href="#turismo-tip" data-toggle="tab"><li>Turismo</li></a>
                                     </ul>
                                 </div>
                             </div>
