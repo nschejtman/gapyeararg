@@ -1,4 +1,4 @@
-@(js : Html = Html(""), css : Html = Html(""))(content: Html)
+@(js: Html = Html(""), css: Html = Html(""))(content: Html)
 <!DOCTYPE html>
 <html>
     <head>
@@ -34,8 +34,10 @@
                 <nav class="menu">
                     <ul>
                         <li><span class="border-bottom"></span> <a href="@routes.Application.home()">Home</a></li>
-                        <li><span class="border-bottom"></span> <a href="@routes.Application.programas()">Programas</a></li>
-                        <li><span class="border-bottom"></span> <a href="@routes.Application.alojamiento()">Alojamiento</a></li>
+                        <li><span class="border-bottom"></span> <a href="@routes.Application.programas()">
+                            Programas</a></li>
+                        <li><span class="border-bottom"></span> <a href="@routes.Application.alojamiento()">
+                            Alojamiento</a></li>
                         <li><span class="border-bottom"></span><a href="@routes.Application.tips()">Tips</a></li>
                         <li><span class="border-bottom"></span> <a href="@routes.Application.contacto()">Contacto</a></li>
                     </ul>
@@ -56,6 +58,13 @@
             <!-- end div #wrapper -->
 
             <!-- start footer -->
+        <div class="mini-footer">
+            <i class="mini-footer-title">Contacto</i><br>
+            <i class="fa fa-home"></i> Iriarte 2685 – CABA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-phone"></i> (011) 4301-9382 (Lunes a jueves de 14 a 20) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-phone"></i> (011) 154 143 6479 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-envelope"></i> <a href="mailto:info@@gapyearargentina.com">info@@gapyearargentina.com</a>
+        </div>
         <footer>
             <div class="footer-top">
                 <div class="logo">
@@ -65,18 +74,13 @@
                 <div class="widget first">
                     <div class="desc">
                         <h3 class="orange">Nuestra mision</h3>
-                        <p class="justify">Nuestro objetivo es proporcionar a cada alumno un fantástico curso de idiomas en una
+                        <p class="justify">
+                            Nuestro objetivo es proporcionar a cada alumno un fantástico curso de idiomas en una
                             ubicación maravillosa, donde podrán aprender un idioma y sumergirse al mismo tiempo en
                             una cultura diferente. Les garantizamos un viaje memorable donde alcanzarán logros que
                             podrán llevarse con ellos para siempre, transformándolos en una verdadera experiencia
                             de vida tan enriquecedora como única.</p>
                     </div>
-                    <ul class="info">
-                        <li class="address">Iriarte 2685 – CABA</li>
-                        <li class="phone">(011) 4301-9382 Lunes a jueves de 14 a 20</li>
-                        <li class="phone">(011) 154 143 6479</li>
-                        <li class="mail"><a href="mailto:info@@gapyearargentina.com">info@@gapyearargentina.com</a></li>
-                    </ul>
                 </div>
                 <div class="widget double">
                     <div class="photos  ">
@@ -109,12 +113,8 @@
                 </div>
                 <div class="clear"></div>
             </div>
-            <div class="footer-bottom">
-                <div class="copyright">
-                    <p>Copyright 2015 @@ <span>Gap Year Argentina</span></p>
-                </div>
-                <div class="clear"></div>
-            </div>
+            <br>
+            <br>
         </footer>
             <!-- end footer -->
 

@@ -416,3 +416,23 @@ ul.info * {
 #eng-tips a{
     color: inherit;
 }
+
+.mini-footer{
+    color: white;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    width: 1120px;
+    z-index: 1;
+    left: 50%;
+    margin-left: -572.5px;
+    background-color: #232323;
+    height: 40px;
+    padding: 5px 5px 5px 20px;
+}
+.mini-footer a{
+    color: inherit;
+}
+.mini-footer .mini-footer-title{
+    font-size: 12px;
+}
