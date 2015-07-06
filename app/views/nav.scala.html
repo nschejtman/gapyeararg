@@ -21,7 +21,7 @@
 <![endif]-->
     </head>
 
-    <body class="home">
+    <body> class="home">
             <!-- start div #wrapper -->
         <div id="wrapper">
                 <!-- start header -->
@@ -38,7 +38,11 @@
                             Programas</a></li>
                         <li><span class="border-bottom"></span> <a href="@routes.Application.alojamiento()">
                             Alojamiento</a></li>
-                        <li><span class="border-bottom"></span><a href="@routes.Application.tips()">Tips</a></li>
+                        <li>
+                            <span class="border-bottom" style="bottom: 17px"></span>
+                            <a href="@routes.Application.tips()">Tips</a>
+                            <span class="badge">5</span>
+                        </li>
                         <li><span class="border-bottom"></span> <a href="@routes.Application.contacto()">Contacto</a></li>
                     </ul>
                 </nav>
@@ -223,7 +227,6 @@
     /* ]]> */
 </script>
         @js
-
     </body>
 
 </html>

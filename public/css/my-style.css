@@ -3,6 +3,16 @@
     src: url('../fonts/PoetsenOne-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'SingleSleeve';
+    src: url('../fonts/sing_14l.ttf');
+}
+
+@font-face {
+    font-family: 'Timotheos';
+    src: url('../fonts/Timoteo.ttf');
+}
+
 .input-control{
     border: none;
     background-color: #f1f1f1;
@@ -355,7 +365,7 @@ article.small .cat-post-desc h3 {
 }
 
 .country-content .width-80p{
-    background-color: rgba(255, 180, 0, 0.74);
+    background-color: rgba(255, 198, 61, 0.74);
     display: inline-block;
     padding: 20px;
     width: 68%;
@@ -417,6 +427,14 @@ ul.info * {
     color: inherit;
 }
 
+#fr-tips a{
+    color: inherit;
+}
+
+#it-tips a{
+    color: inherit;
+}
+
 .mini-footer{
     color: white;
     font-size: 16px;
@@ -436,3 +454,19 @@ ul.info * {
 .mini-footer .mini-footer-title{
     font-size: 12px;
 }
+
+.badge{
+    background-color: rgb(255, 180, 0);
+    border-radius: 50%;
+    padding: 5px 9px;
+    color: white;
+    position: relative;
+    top: -83px;
+    right: -34px;
+    z-index: -1
+}
+
+.tip h6{
+    font-family: Timotheos, serif;
+}
+
