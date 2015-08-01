@@ -86,8 +86,10 @@
 }
 
 .cn_content.bg-1{
-    background-image: url('http://assets.winspireme.com/packages/1332-1332_London-Paris-Luxury-Stay-MAIN.jpg');
+    background-image: url('http://www.insider-travel.com/wp-content/uploads/2014/01/paris-banner.jpg');
     background-size: cover;
+    background-position-y: -20px;
+    /*background-position-x: -454px;*/
 }
 
 .cn_content.bg-2{
