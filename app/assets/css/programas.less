@@ -1,0 +1,76 @@
+@man-city: rgb(1, 180, 225);
+@london-central: #001b4e;
+@london-eltham: rgb(207, 20, 43);
+@cambridge: rgb(1, 103, 188);
+@paris: #e9b229;
+@florence: #009246;
+
+.curly-font {
+  font-family: Poets, BebasNeueRegular, sans-serif;
+}
+
+.london-central {
+  h2, h3 {
+    color: @london-central;
+    .curly-font;
+  }
+}
+
+.paris {
+  h2, h3 {
+    color: @paris;
+    .curly-font;
+  }
+}
+
+.london-eltham {
+  h2, h3 {
+    color: @london-eltham;
+    .curly-font;
+  }
+}
+
+.cambridge {
+  h2, h3 {
+    color: @cambridge;
+    .curly-font;
+  }
+}
+
+.florence {
+  h2, h3 {
+    color: @florence;
+    .curly-font;
+  }
+}
+
+.man-city {
+  h2, h3 {
+    color: @man-city;
+    .curly-font;
+  }
+}
+
+.font-awesome-list {
+  font-family: 'FontAwesome';
+  margin: 0 5px 0 -15px;
+  padding-left: 15px;
+}
+
+.check-list {
+  li:before {
+    content: '\f046';
+    .font-awesome-list
+  }
+}
+
+.activity-list {
+  li:before {
+    content: '\f206';
+    .font-awesome-list
+  }
+}
+
+.padding-left-10{
+  padding-left: 10px;
+}

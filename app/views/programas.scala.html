@@ -1,121 +1,100 @@
 @()
-    @nav() {
-        <!-- start div #main-title -->
+    @css = {
+        <link rel="stylesheet" href="@routes.Assets.at("css/programas.min.css")"/>
+    }
+    @nav(css = css) {
         <div class="main-title">
-            <p>programas</p>
+            <p>Programas</p>
         </div>
-        <!-- end div #main-title -->
-
-        <!-- start div #main -->
         <div id="main programas">
             <div class="main-content">
+                    <!--todo remove div class="features"-->
                 <div class="features">
-
-                    <div class="row-fluid">
-                        <div class="span1">
-                            <div class="accordion" id="accordion">
-                                <div class="accordion-group">
-                                    <div class="accordion-heading">
-                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                            <span class="icon"></span>
-                                            Ingles
-                                        </a>
-                                    </div>
-                                    <div id="collapseOne" class="accordion-body collapse">
-                                        <div class="accordion-inner">
-                                                <!---------------------LONDON CENTRAL START---------------------------------->
-                                            <div class="london-central">
-                                                <h2>London Central</h2>
-                                                <iframe width="100%" height="450px" src="https://www.youtube.com/embed/Uax5-SaGlpo" frameborder="0" allowfullscreen></iframe>
-                                                <div class="clearfix"></div>
-
-                                                <div class="container">
-                                                    <div class="row-fluid">
-                                                        <div class="span1 logo-container">
-                                                            <h3 class="no-margin">Acreditada por</h3>
-                                                            <img src="@routes.Assets.at("img/euk.png")">
-                                                            <img src="@routes.Assets.at("img/eaq.png")">
-                                                            <img src="@routes.Assets.at("img/enguk.png")">
-                                                            <img src="@routes.Assets.at("img/britcon.png")">
-                                                        </div>
-                                                    </div>
-                                                    <div class="clearfix"></div>
-                                                    <div class="row-fluid">
-                                                        <div class="col4">
-                                                            <h3 class="margin-top-30s">Highlights</h3>
-                                                            <ul>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Acreditada por Eaquals, British Council & English UK</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Esta escuela recibió las mejores calificaciones en el Informe de Supervisión de la Educación 2014</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Escuela totalmente nueva con un magnífico diseño interior</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Instalaciones excepcionales en el corazón de Londres</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Centro examinador para el IELTS</li>
-                                                            </ul>
-                                                            <h3 class="margin-top-30">Programa</h3>
-                                                            <ul>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Duración mínima: 2 semanas</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Básico: 20 clases/semana</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Intensivo: 25 clases/semana</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Super Intensivo: 30 clases/semana</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Comienzo: Todos los lunes</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Programa de eLearning antes, durante y después de tu estadía</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Dirigido a jovenes y adultos</li>
-                                                            </ul>
-                                                            <h3 class="margin-top-30">Actividades</h3>
-                                                            <ul>
-                                                                <li><i class="fa fa-bicycle"></i>
-                                                                    Recorridos por los lugares únicos de Londres</li>
-                                                                <li><i class="fa fa-bicycle"></i>
-                                                                    Actividades deportivas</li>
-                                                                <li><i class="fa fa-bicycle"></i>
-                                                                    Visitas a museos y galerías de arte</li>
-                                                                <li><i class="fa fa-bicycle"></i>
-                                                                    Salidas al teatro y discos</li>
-                                                                <li><i class="fa fa-bicycle"></i>
-                                                                    Excursiones a distintos pueblos y ciudades de Inglaterra</li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col8">
-                                                            <h3 class="no-margin">Sobre la escuela   </h3>
-                                                            <img src="@routes.Assets.at("img/loncen-ext.jpg")" width="100%">
-                                                            <p>
-                                                                <br>
-                                                                La escuela está ubicada en un elegante edificio del siglo 19 frente
-                                                                a una plaza y muy cerquita de Victoria Station. Cuenta con 17
-                                                                aulas, snack bar, learning centre, un study room y varias áreas
-                                                                para estudiantes (common rooms) donde pueden relajarse,
-                                                                conocer y charlar con todos los alumnos de la escuela.
-                                                                <br>
-                                                            </p>
-                                                                <img src="@routes.Assets.at("img/vic_station.png")" width="100%">
-                                                            <h3>Sobre la ciudad   </h3>
-                                                                <img src="http://travelingyourdream.com/wp-content/uploads/2012/11/london-eve.jpg" width="100%">
-                                                            <p>
-                                                                <br>
-                                                                Londres es el centro del mundo y marca tendencias. Todo pasa
-                                                                por Londres. Nada mejor que estudiar en el corazón de esta
-                                                                ciudad tan cosmopolita a un paso de museos, teatros, restaurantes, pubs, galerías  y
-                                                                conciertos, que hacen que siempre tengas un plan.
-                                                                <br>
-                                                            </p>
-
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="clearfix"><br></div>
-                                                    <div class="row-fluid">
-                                                        <h3>Galería</h3>
+                    <div class="accordion" id="accordion">
+                            <!--english start-->
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                    <span class="icon"></span>
+                                    Ingles
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="accordion-body collapse">
+                                    <!--london central start-->
+                                <div class="accordion-inner">
+                                    <div class="london-central">
+                                        <h2>London Central</h2>
+                                        <iframe width="100%" height="450px" src="https://www.youtube.com/embed/Uax5-SaGlpo" frameborder="0" allowfullscreen></iframe>
+                                        <div class="clearfix"></div>
+                                        <div class="container">
+                                            <div class="row-fluid">
+                                                <div class="span1 logo-container">
+                                                    <h3 class="no-margin">Acreditada por</h3>
+                                                    <img src="@routes.Assets.at("img/euk.png")">
+                                                    <img src="@routes.Assets.at("img/eaq.png")">
+                                                    <img src="@routes.Assets.at("img/enguk.png")">
+                                                    <img src="@routes.Assets.at("img/britcon.png")">
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="row-fluid">
+                                                <div class="col4">
+                                                    <h3 class="margin-top-30s">Highlights</h3>
+                                                    <ul class="check-list">
+                                                        <li>Acreditada por Eaquals, British Council & English UK</li>
+                                                        <li>Esta escuela recibió las mejores calificaciones en el Informe de Supervisión de la Educación 2014</li>
+                                                        <li>Escuela totalmente nueva con un magnífico diseño interior</li>
+                                                        <li>Instalaciones excepcionales en el corazón de Londres</li>
+                                                        <li>Centro examinador para el IELTS</li>
+                                                    </ul>
+                                                    <h3 class="margin-top-30">Programa</h3>
+                                                    <ul class="check-list">
+                                                        <li>Duración mínima: 2 semanas</li>
+                                                        <li>Básico: 20 clases/semana</li>
+                                                        <li>Intensivo: 25 clases/semana</li>
+                                                        <li>Super Intensivo: 30 clases/semana</li>
+                                                        <li>Comienzo: Todos los lunes</li>
+                                                        <li>Programa de eLearning antes, durante y después de tu estadía</li>
+                                                        <li>Dirigido a jovenes y adultos</li>
+                                                    </ul>
+                                                    <h3 class="margin-top-30">Actividades</h3>
+                                                    <ul class="activity-list">
+                                                        <li>Recorridos por los lugares únicos de Londres</li>
+                                                        <li>Actividades deportivas</li>
+                                                        <li>Visitas a museos y galerías de arte</li>
+                                                        <li>Salidas al teatro y discos</li>
+                                                        <li>Excursiones a distintos pueblos y ciudades de Inglaterra</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col8">
+                                                    <h3 class="no-margin">Sobre la escuela   </h3>
+                                                    <img src="@routes.Assets.at("img/loncen-ext.jpg")" width="100%">
+                                                    <p>
+                                                        <br>
+                                                        La escuela está ubicada en un elegante edificio del siglo 19 frente
+                                                        a una plaza y muy cerquita de Victoria Station. Cuenta con 17
+                                                        aulas, snack bar, learning centre, un study room y varias áreas
+                                                        para estudiantes (common rooms) donde pueden relajarse,
+                                                        conocer y charlar con todos los alumnos de la escuela.
+                                                        <br>
+                                                    </p>
+                                                    <img src="@routes.Assets.at("img/vic_station.png")" width="100%">
+                                                    <h3>Sobre la ciudad   </h3>
+                                                    <img src="http://travelingyourdream.com/wp-content/uploads/2012/11/london-eve.jpg" width="100%">
+                                                    <p>
+                                                        <br>
+                                                        Londres es el centro del mundo y marca tendencias. Todo pasa
+                                                        por Londres. Nada mejor que estudiar en el corazón de esta
+                                                        ciudad tan cosmopolita a un paso de museos, teatros, restaurantes, pubs, galerías  y
+                                                        conciertos, que hacen que siempre tengas un plan.
+                                                        <br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"><br></div>
+                                            <div class="row-fluid">
+                                                <h3>Galería</h3>
+                                                    <!--
                                                         <img src="http://d37jvpv2lu5djb.cloudfront.net/cdn/farfuture/xGGXFT32Vc9T-ppyJ1RqxhZ-pc8klTl-L0feazqDAjM/mtime:1424249460/sites/default/files/styles/ec_gallery_thumb/public/cen_student_lounge_v8.jpg?itok=oeVKnVv9">
                                                         <img src="http://d37jvpv2lu5djb.cloudfront.net/cdn/farfuture/JLtV7Lbh-8JRiMyqUoGwxOl5EkJjLhUjv7JAxaHFZb4/mtime:1424249443/sites/default/files/styles/ec_gallery_thumb/public/cen_student_lounge_v5.jpg?itok=0OsN--Nm">
                                                         <img src="http://d37jvpv2lu5djb.cloudfront.net/cdn/farfuture/R7twN4bvKhCMp5xd6tVpBlVA3W1dPILLwN-0f4kgeNQ/mtime:1424249546/sites/default/files/styles/ec_gallery_thumb/public/cen_student_lounge_v10.jpg?itok=KwHfjy84">
@@ -127,396 +106,427 @@
                                                         <img src="http://d37jvpv2lu5djb.cloudfront.net/cdn/farfuture/3T0VSB9_xJiPQ0clpbm2EDNoCV9HYJoR3WeghsuN8B4/mtime:1424249517/sites/default/files/styles/ec_gallery_thumb/public/cen_classroom_v10.jpg?itok=XOg0INHF">
                                                         <img src="http://d37jvpv2lu5djb.cloudfront.net/cdn/farfuture/rqBgrV1-AJnZSzz-hY5WiQOR6cMp-DS99R-UUpdYSVw/mtime:1424249424/sites/default/files/styles/ec_gallery_thumb/public/cen_class_room_v8.jpg?itok=GjYowtRx">
                                                         <img src="http://d37jvpv2lu5djb.cloudfront.net/cdn/farfuture/V-_REuI-EKwWdv2SBKgfmkqT5qwoC4Pps-nG7qztkTs/mtime:1424249508/sites/default/files/styles/ec_gallery_thumb/public/cen_cafeteria_v1.jpg?itok=7g2bSXsB">
-                                                        <img src="@routes.Assets.at("img/loncen1.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/loncen2.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/loncen3.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/loncen4.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/loncen5.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/loncen6.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/loncen7.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/loncen8.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/loncen9.jpg")" width="200px" height="150px">
-
-                                                    </div>
-                                                </div>
-
-
+                                                        -->
+                                                <img src="@routes.Assets.at("img/loncen1.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/loncen2.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/loncen3.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/loncen4.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/loncen5.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/loncen6.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/loncen7.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/loncen8.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/loncen9.jpg")" width="200px" height="150px">
                                             </div>
-                                            <br>
-                                            <br>
-                                                <!---------------------LONDON CENTRAL END------------------------------------>
-                                            <hr>
-                                            <br>
-                                            <br>
-                                                <!---------------------LONDON ELTHAM START----------------------------------->
-                                            <div class="london-eltham">
-                                                <h2>London Eltham</h2>
-                                                <iframe width="100%" height="450px" src="https://www.youtube.com/embed/v4kk5sRHQdc" frameborder="0" allowfullscreen></iframe>
-                                                <div class="clearfix"></div>
-                                                <div class="container">
-                                                    <div class="row-fluid">
-                                                        <div class="span1 logo-container">
-                                                            <h3 class="no-margin">Acreditada por</h3>
-                                                            <img src="@routes.Assets.at("img/euk.png")">
-                                                            <img src="@routes.Assets.at("img/eaq.png")">
-                                                            <img src="@routes.Assets.at("img/enguk.png")">
-                                                            <img src="@routes.Assets.at("img/britcon.png")">
-                                                        </div>
-                                                    </div>
-                                                    <div class="clearfix"></div>
-                                                    <div class="row-fluid">
-                                                        <div class="col4">
-                                                            <h3 class="no-margin">Highlights</h3>
-                                                            <ul>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Acreditada por Eaquals, British Council &amp; English UK</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Esta escuela recibió las mejores calificaciones en el Informe de Supervisión de la Educación 2014</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Escuela totalmente renovada con un magnífico diseño interior</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Ubicación excepcional – rodeada de la campiña Inglesa en los jardines de Eltham Palace</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    A solo 25 minutos de Londres</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Centro examinador para el IELTS</li>
-                                                            </ul>
-                                                            <h3 class="no-margin">Programa</h3>
-                                                            <ul>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Duración mínima: 2 semanas</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Básico: 20 clases/semana</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Intensivo: 25 clases/semana</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Super Intensivo: 30 clases/semana</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Comienzo: Todos los lunes</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Programa de eLearning antes, durante y después de tu estadía</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Dirigido a jovenes y adultos</li>
-                                                            </ul>
-                                                            <h3 class="no-margin">Actividades</h3>
-                                                            <ul>
-                                                                <li><i class="fa fa-bicycle"></i> Cruceros por el río</li>
-                                                                <li><i class="fa fa-bicycle"></i> Salidas a pubs</li>
-                                                                <li><i class="fa fa-bicycle"></i>
-                                                                    Actividades deportivas</li>
-                                                                <li><i class="fa fa-bicycle"></i>
-                                                                    International evenings</li>
-                                                                <li><i class="fa fa-bicycle"></i>
-                                                                    Excursiones de fin de semana a las ciudades más populares de Inglaterra</li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col8">
-                                                            <h3 class="no-margin">Sobre la escuela   </h3>
-                                                            <img src="@routes.Assets.at("img/elth_ext.jpg")" width="100%">
-                                                            <p>
-                                                                <br>
-                                                                Ubicada en los jardines del palacio real de Eltham y rodeada de la campiña
-                                                                inglesa, esta escuela ofrece un ambiente moderno y placentero para estudiar
-                                                                a tan sólo 25 minutos del centro de Londres. Cuenta con 17 aulas, learning
-                                                                centre, computer room, un student lounge y una cafetería donde los
-                                                                alumnos pueden relajarse y hacerse de nuevos amigos.
-                                                                <br>
-                                                            </p>
-                                                            <br>
-                                                            <h3>Galería</h3>
-                                                            <img src="@routes.Assets.at("img/lonelth1.jpg")" width="200px" height="150px">
-                                                            <img src="@routes.Assets.at("img/lonelth2.jpg")" width="200px" height="150px">
-                                                            <img src="@routes.Assets.at("img/lonelth3.jpg")" width="200px" height="150px">
-                                                            <img src="@routes.Assets.at("img/lonelth4.jpg")" width="200px" height="150px">
-                                                            <img src="@routes.Assets.at("img/lonelth5.jpg")" width="200px" height="150px">
-                                                            <img src="@routes.Assets.at("img/lonelth6.jpg")" width="200px" height="150px">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row-fluid margin-left-10">
-                                                        <img src="@routes.Assets.at("img/lonelth7.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/lonelth8.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/lonelth9.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/lonelth10.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/lonelth11.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/lonelth12.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/lonelth13.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/lonelth14.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/lonelth15.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/lonelth16.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/lonelth17.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/lonelth18.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/lonelth19.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/lonelth20.jpg")" width="200px" height="150px">
-
-                                                    </div>
-                                                </div>
-
-
-                                                <br>
-                                                <br>
-                                                <br>
-                                                <br>
-                                                <br>
-                                            </div>
-                                                <!---------------------LONDON ELTHAM END------------------------------------->
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="accordion-group">
-                                    <div class="accordion-heading">
-                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                            <span class="icon"></span>
-                                            Frances
-                                        </a>
-                                    </div>
-                                    <div id="collapseTwo" class="accordion-body collapse">
-                                        <div class="accordion-inner">
-                                            <div class="paris">
-                                                <h2>Paris</h2>
-                                                <img src="@routes.Assets.at("img/paris_ban1.jpg")">
-
-                                                <div class="clearfix"></div>
-
-                                                <div class="container">
-                                                    <div class="row-fluid">
-                                                        <div class="span1 logo-container">
-                                                            <h3 class="no-margin">Acreditada por</h3>
-                                                            <img src="@routes.Assets.at("img/eaq.png")">
-                                                            <img src="@routes.Assets.at("img/paris_ac.png")">
-                                                            <img src="@routes.Assets.at("img/paris_ac2.png")">
-                                                        </div>
-                                                    </div>
-                                                    <div class="clearfix"></div>
-                                                    <div class="row-fluid">
-                                                        <div class="col4">
-                                                            <h3 class="no-margin">Highlights</h3>
-                                                            <ul>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Acreditada por el Eaquals, FLE y Souffle</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Seleccionada por Lonely Planet</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    En el corazón de Paris</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    En un edificio histórico del Quartier Latin</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Curso de Moda y Diseño también disponible</li>
-                                                            </ul>
-                                                            <h3 class="no-margin">Programa</h3>
-                                                            <ul>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Duración mínima: 2 semanas</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Básico: 20 clases/semana</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Intensivo: 25 clases/semana</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Comienzo: Todos los lunes</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Programa de eLearning antes, durante y después de tu estadía</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Dirigido a jovenes y adultos</li>
-                                                            </ul>
-                                                            <h3 class="no-margin">Actividades</h3>
-                                                            <ul>
-                                                                <li><i class="fa fa-bicycle"></i>
-                                                                    Salidas a museos, teatros, recitales y galerías de arte</li>
-                                                                <li><i class="fa fa-bicycle"></i>
-                                                                    Paseos en bicicleta por la parte más antigua de Paris</li>
-                                                                <li><i class="fa fa-bicycle"></i>
-                                                                    Excursiones a los castillos del Loire y diversas ciudades de Francia.</li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col8">
-                                                            <h3 class="no-margin">Sobre la escuela   </h3>
-                                                            <img src="@routes.Assets.at("img/parschban.jpg")" width="100%">
-                                                            <p>
-                                                                <br>
-                                                                La escuela Eurocentres Paris está ubicada en el Barrio Latino en
-                                                                un edificio histórico totalmente modernizado. Cuenta con 13
-                                                                aulas y está equipado con un learning centre, una terraza, áreas
-                                                                comunes donde los alumnos pueden relajarse y conocer nuevos
-                                                                amigos.
-                                                                <br>
-                                                            </p>
-                                                            <h3>Sobre la ciudad   </h3>
-                                                            <img src="http://www.dkloi.co.uk/wp-content/uploads/2012/02/Louvre_Pyramid_banner.jpg" width="100%">
-                                                            <p>
-                                                                <br>
-                                                                Paris tiene todo lo que esperas ver. Esta ciudad elegante llena de
-                                                                espíritu y famosa por su arte, te ofrece cultura, moda,
-                                                                monumentos históricos, amplios bulevares y una variada vida
-                                                                nocturna. Estudiá francés en el corazón del Barrio Latino en un
-                                                                edificio restaurado cargado de historia.
-                                                                <br>
-                                                            </p>
-
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="clearfix"><br></div>
-                                                    <div class="row-fluid">
-                                                        <h3>Galería</h3>
-                                                        <img src="@routes.Assets.at("img/pg1.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/pg2.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/pg3.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/pg4.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/pg5.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/pg6.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/pg7.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/pg8.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/pg9.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/pg10.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/pg11.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/pg12.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/pg13.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/pg14.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/pg15.jpg")" width="200px" height="150px">
-
-                                                    </div>
+                                    <br>
+                                    <br>
+                                        <!--london central end-->
+                                    <hr>
+                                    <br>
+                                    <br>
+                                        <!-- london eltham start-->
+                                    <div class="london-eltham">
+                                        <h2>London Eltham</h2>
+                                        <iframe width="100%" height="450px" src="https://www.youtube.com/embed/v4kk5sRHQdc" frameborder="0" allowfullscreen></iframe>
+                                        <div class="clearfix"></div>
+                                        <div class="container">
+                                            <div class="row-fluid">
+                                                <div class="span1 logo-container">
+                                                    <h3 class="no-margin">Acreditada por</h3>
+                                                    <img src="@routes.Assets.at("img/euk.png")">
+                                                    <img src="@routes.Assets.at("img/eaq.png")">
+                                                    <img src="@routes.Assets.at("img/enguk.png")">
+                                                    <img src="@routes.Assets.at("img/britcon.png")">
                                                 </div>
-
-
                                             </div>
-                                            <br>
-                                            <br>
+                                            <div class="clearfix"></div>
+                                            <div class="row-fluid">
+                                                <div class="col4">
+                                                    <h3 class="no-margin">Highlights</h3>
+                                                    <ul class="check-list">
+                                                        <li>Acreditada por Eaquals, British Council &amp; English UK</li>
+                                                        <li>Esta escuela recibió las mejores calificaciones en el Informe de Supervisión de la Educación 2014</li>
+                                                        <li>Escuela totalmente renovada con un magnífico diseño interior</li>
+                                                        <li>Ubicación excepcional – rodeada de la campiña Inglesa en los jardines de Eltham Palace</li>
+                                                        <li>A solo 25 minutos de Londres</li>
+                                                        <li>Centro examinador para el IELTS</li>
+                                                    </ul>
+                                                    <h3 class="no-margin">Programa</h3>
+                                                    <ul>
+                                                        <li>Duración mínima: 2 semanas</li>
+                                                        <li>Básico: 20 clases/semana</li>
+                                                        <li>Intensivo: 25 clases/semana</li>
+                                                        <li>Super Intensivo: 30 clases/semana</li>
+                                                        <li>Comienzo: Todos los lunes</li>
+                                                        <li>Programa de eLearning antes, durante y después de tu estadía</li>
+                                                        <li>Dirigido a jovenes y adultos</li>
+                                                    </ul>
+                                                    <h3 class="no-margin">Actividades</h3>
+                                                    <ul class="activity-list">
+                                                        <li> Cruceros por el río</li>
+                                                        <li> Salidas a pubs</li>
+                                                        <li>Actividades deportivas</li>
+                                                        <li>International evenings</li>
+                                                        <li>Excursiones de fin de semana a las ciudades más populares de Inglaterra</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col8">
+                                                    <h3 class="no-margin">Sobre la escuela   </h3>
+                                                    <img src="@routes.Assets.at("img/elth_ext.jpg")" width="100%">
+                                                    <p>
+                                                        <br>
+                                                        Ubicada en los jardines del palacio real de Eltham y rodeada de la campiña
+                                                        inglesa, esta escuela ofrece un ambiente moderno y placentero para estudiar
+                                                        a tan sólo 25 minutos del centro de Londres. Cuenta con 17 aulas, learning
+                                                        centre, computer room, un student lounge y una cafetería donde los
+                                                        alumnos pueden relajarse y hacerse de nuevos amigos.
+                                                        <br>
+                                                    </p>
+                                                    <br>
+                                                    <h3>Galería</h3>
+                                                    <img src="@routes.Assets.at("img/lonelth1.jpg")" width="200px" height="150px">
+                                                    <img src="@routes.Assets.at("img/lonelth2.jpg")" width="200px" height="150px">
+                                                    <img src="@routes.Assets.at("img/lonelth3.jpg")" width="200px" height="150px">
+                                                    <img src="@routes.Assets.at("img/lonelth4.jpg")" width="200px" height="150px">
+                                                    <img src="@routes.Assets.at("img/lonelth5.jpg")" width="200px" height="150px">
+                                                    <img src="@routes.Assets.at("img/lonelth6.jpg")" width="200px" height="150px">
+                                                </div>
+                                            </div>
+                                            <div class="row-fluid margin-left-10">
+                                                <img src="@routes.Assets.at("img/lonelth7.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/lonelth8.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/lonelth9.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/lonelth10.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/lonelth11.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/lonelth12.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/lonelth13.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/lonelth14.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/lonelth15.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/lonelth16.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/lonelth17.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/lonelth18.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/lonelth19.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/lonelth20.jpg")" width="200px" height="150px">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                    </div>
+                                        <!--london eltham end-->
+                                </div>
+                            </div>
+                        </div>
+                            <!--english end-->
+                            <!--french start-->
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                    <span class="icon"></span>
+                                    Frances
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <div class="paris">
+                                        <h2>Paris</h2>
+                                        <img src="@routes.Assets.at("img/paris_ban1.jpg")">
+                                        <div class="clearfix"></div>
+                                        <div class="container">
+                                            <div class="row-fluid">
+                                                <div class="span1 logo-container">
+                                                    <h3 class="no-margin">Acreditada por</h3>
+                                                    <img src="@routes.Assets.at("img/eaq.png")">
+                                                    <img src="@routes.Assets.at("img/paris_ac.png")">
+                                                    <img src="@routes.Assets.at("img/paris_ac2.png")">
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="row-fluid">
+                                                <div class="col4">
+                                                    <h3 class="no-margin">Highlights</h3>
+                                                    <ul class="check-list">
+                                                        <li>Acreditada por el Eaquals, FLE y Souffle</li>
+                                                        <li>Seleccionada por Lonely Planet</li>
+                                                        <li>En el corazón de Paris</li>
+                                                        <li>En un edificio histórico del Quartier Latin</li>
+                                                        <li>Curso de Moda y Diseño también disponible</li>
+                                                    </ul>
+                                                    <h3 class="no-margin">Programa</h3>
+                                                    <ul class="check-list">
+                                                        <li>Duración mínima: 2 semanas</li>
+                                                        <li>Básico: 20 clases/semana</li>
+                                                        <li>Intensivo: 25 clases/semana</li>
+                                                        <li>Comienzo: Todos los lunes</li>
+                                                        <li>Programa de eLearning antes, durante y después de tu estadía</li>
+                                                        <li>Dirigido a jovenes y adultos</li>
+                                                    </ul>
+                                                    <h3 class="no-margin">Actividades</h3>
+                                                    <ul class="activity-list">
+                                                        <li>Salidas a museos, teatros, recitales y galerías de arte</li>
+                                                        <li>Paseos en bicicleta por la parte más antigua de Paris</li>
+                                                        <li>Excursiones a los castillos del Loire y diversas ciudades de Francia.</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col8">
+                                                    <h3 class="no-margin">Sobre la escuela   </h3>
+                                                    <img src="@routes.Assets.at("img/parschban.jpg")" width="100%">
+                                                    <p>
+                                                        <br>
+                                                        La escuela Eurocentres Paris está ubicada en el Barrio Latino en
+                                                        un edificio histórico totalmente modernizado. Cuenta con 13
+                                                        aulas y está equipado con un learning centre, una terraza, áreas
+                                                        comunes donde los alumnos pueden relajarse y conocer nuevos
+                                                        amigos.
+                                                        <br>
+                                                    </p>
+                                                    <h3>Sobre la ciudad   </h3>
+                                                    <img src="http://www.dkloi.co.uk/wp-content/uploads/2012/02/Louvre_Pyramid_banner.jpg" width="100%">
+                                                    <p>
+                                                        <br>
+                                                        Paris tiene todo lo que esperas ver. Esta ciudad elegante llena de
+                                                        espíritu y famosa por su arte, te ofrece cultura, moda,
+                                                        monumentos históricos, amplios bulevares y una variada vida
+                                                        nocturna. Estudiá francés en el corazón del Barrio Latino en un
+                                                        edificio restaurado cargado de historia.
+                                                        <br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"><br></div>
+                                            <div class="row-fluid">
+                                                <h3>Galería</h3>
+                                                <img src="@routes.Assets.at("img/pg1.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/pg2.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/pg3.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/pg4.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/pg5.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/pg6.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/pg7.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/pg8.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/pg9.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/pg10.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/pg11.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/pg12.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/pg13.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/pg14.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/pg15.jpg")" width="200px" height="150px">
+                                            </div>
                                         </div>
                                     </div>
+                                    <br>
+                                    <br>
                                 </div>
-                                <div class="accordion-group">
-                                    <div class="accordion-heading">
-                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                                            <span class="icon"></span>
-                                            Italiano
-                                        </a>
-                                    </div>
-                                    <div id="collapseThree" class="accordion-body collapse">
-                                        <div class="accordion-inner">
-                                            <div class="florence">
-                                                <h2>Florencia</h2>
-                                                <img src="https://www.capa.org/sites/default/files/Florence_Banner_CROPPED.jpg" width="100%">
-                                                <div class="clearfix"></div>
-
-                                                <div class="container">
-                                                    <div class="row-fluid">
-                                                        <div class="span1 logo-container">
-                                                            <h3 class="no-margin">Acreditada por</h3>
-                                                            <img src="@routes.Assets.at("img/eaq.png")">
-                                                            <img src="@routes.Assets.at("img/edit.png")">
-                                                        </div>
-                                                    </div>
-                                                    <div class="clearfix"></div>
-                                                    <div class="row-fluid">
-                                                        <div class="col4">
-                                                            <h3 class="no-margin">Highlights</h3>
-                                                            <ul>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Acreditada por el EAQUALS, Eduitalia y ACCREDIA, Certificación ISO 90001</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    La escuela de idiomas más antigua de Florencia</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Cursos de cocina, historia del arte, pintura y dibujo también disponibles</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Una histórica ciudad, inundada de arte y cultura</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Las principales atracciones se encuentran a pasos de la escuela</li>
-                                                            </ul>
-                                                            <h3 class="no-margin">Programa</h3>
-                                                            <ul>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Duración mínima: 2 semanas</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Básico: 20 clases/semana</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Intensivo: 25 clases/semana</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Comienzo: Todos los lunes</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Programa de eLearning antes, durante y después de tu estadía</li>
-                                                                <li><i class="fa fa-check-square-o"></i>
-                                                                    Dirigido a jovenes y adultos</li>
-                                                            </ul>
-                                                            <h3 class="no-margin">Actividades</h3>
-                                                            <ul>
-                                                                <li><i class="fa fa-bicycle"></i>
-                                                                    Recorridos a pie
-
-                                                                    por las callecitas de Florencia visitando todos los monumentos y edificios
-
-                                                                    históricos de esta ciudad</li>
-                                                                <li><i class="fa fa-bicycle"></i>
-                                                                    Salidas al cine</li>
-                                                                <li><i class="fa fa-bicycle"></i>
-                                                                    Noches internacionales</li>
-                                                                <li><i class="fa fa-bicycle"></i>
-                                                                    Excursiones a Roma, Venezia, Pisa, Siena, Cinque Terre y Chianti.</li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col8">
-                                                            <h3 class="no-margin">Sobre la escuela   </h3>
-                                                            <img src="@routes.Assets.at("img/floschban.jpg")" width="100%">
-                                                            <p>
-                                                                <br>
-                                                                La escuela está ubicada en el renacentista Palacio Guadagni, en el corazón
-                                                                del centro histórico de la ciudad y muy cerquita del Ponte Vecchio. Cuenta
-                                                                con 11 aulas, un completo learning centre, sala de lectura, una hermosa
-                                                                terraza y un área donde los estudiantes pueden relajarse y hacer nuevas
-                                                                amistades.
-                                                                <br>
-                                                            </p>
-                                                            <h3>Sobre la ciudad   </h3>
-                                                            <img src="http://www.aifspartnerships.com/images/backgrounds/main-banner-schools-florence.jpg" width="100%">
-                                                            <p>
-                                                                <br>
-                                                                Florencia, el hogar de Dante, la familia Medici y Miguel Angel,
-                                                                es considerada la cuna de la cultura europea. Famosa no solo por
-                                                                sus “palazzi”, galerías y museos sino también por los numerosos
-                                                                bares, mercados y talleres de artesanos locales. Activá tu italiano
-                                                                estudiando en el Palazzo Guadagni cerca del Ponte Vecchio, en
-                                                                medio del casco antiguo de la ciudad.
-                                                                <br>
-                                                            </p>
-
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="clearfix"><br></div>
-                                                    <div class="row-fluid">
-                                                        <h3>Galería</h3>
-                                                        <img src="@routes.Assets.at("img/flo1.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/flo2.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/flo3.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/flo4.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/flo5.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/flo6.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/flo7.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/flo8.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/flo9.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/flo10.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/flo11.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/flo12.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/flo13.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/flo14.jpg")" width="200px" height="150px">
-                                                        <img src="@routes.Assets.at("img/flo15.jpg")" width="200px" height="150px">
-
-                                                    </div>
+                            </div>
+                        </div>
+                            <!--french end-->
+                            <!--italian start-->
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                    <span class="icon"></span>
+                                    Italiano
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <div class="florence">
+                                        <h2>Florencia</h2>
+                                        <img src="https://www.capa.org/sites/default/files/Florence_Banner_CROPPED.jpg" width="100%">
+                                        <div class="clearfix"></div>
+                                        <div class="container">
+                                            <div class="row-fluid">
+                                                <div class="span1 logo-container">
+                                                    <h3 class="no-margin">Acreditada por</h3>
+                                                    <img src="@routes.Assets.at("img/eaq.png")">
+                                                    <img src="@routes.Assets.at("img/edit.png")">
                                                 </div>
-
-
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="row-fluid">
+                                                <div class="col4">
+                                                    <h3 class="no-margin">Highlights</h3>
+                                                    <ul class="check-list">
+                                                        <li>Acreditada por el EAQUALS, Eduitalia y ACCREDIA, Certificación ISO 90001</li>
+                                                        <li>La escuela de idiomas más antigua de Florencia</li>
+                                                        <li>Cursos de cocina, historia del arte, pintura y dibujo también disponibles</li>
+                                                        <li>Una histórica ciudad, inundada de arte y cultura</li>
+                                                        <li>Las principales atracciones se encuentran a pasos de la escuela</li>
+                                                    </ul>
+                                                    <h3 class="no-margin">Programa</h3>
+                                                    <ul class="check-list">
+                                                        <li>Duración mínima: 2 semanas</li>
+                                                        <li>Básico: 20 clases/semana</li>
+                                                        <li>Intensivo: 25 clases/semana</li>
+                                                        <li>Comienzo: Todos los lunes</li>
+                                                        <li>Programa de eLearning antes, durante y después de tu estadía</li>
+                                                        <li>Dirigido a jovenes y adultos</li>
+                                                    </ul>
+                                                    <h3 class="no-margin">Actividades</h3>
+                                                    <ul class="activity-list">
+                                                        <li>Recorridos a pie
+                                                            por las callecitas de Florencia visitando todos los monumentos y edificios
+                                                            históricos de esta ciudad</li>
+                                                        <li>Salidas al cine</li>
+                                                        <li>Noches internacionales</li>
+                                                        <li>Excursiones a Roma, Venezia, Pisa, Siena, Cinque Terre y Chianti.</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col8">
+                                                    <h3 class="no-margin">Sobre la escuela   </h3>
+                                                    <img src="@routes.Assets.at("img/floschban.jpg")" width="100%">
+                                                    <p>
+                                                        <br>
+                                                        La escuela está ubicada en el renacentista Palacio Guadagni, en el corazón
+                                                        del centro histórico de la ciudad y muy cerquita del Ponte Vecchio. Cuenta
+                                                        con 11 aulas, un completo learning centre, sala de lectura, una hermosa
+                                                        terraza y un área donde los estudiantes pueden relajarse y hacer nuevas
+                                                        amistades.
+                                                        <br>
+                                                    </p>
+                                                    <h3>Sobre la ciudad   </h3>
+                                                    <img src="http://www.aifspartnerships.com/images/backgrounds/main-banner-schools-florence.jpg" width="100%">
+                                                    <p>
+                                                        <br>
+                                                        Florencia, el hogar de Dante, la familia Medici y Miguel Angel,
+                                                        es considerada la cuna de la cultura europea. Famosa no solo por
+                                                        sus “palazzi”, galerías y museos sino también por los numerosos
+                                                        bares, mercados y talleres de artesanos locales. Activá tu italiano
+                                                        estudiando en el Palazzo Guadagni cerca del Ponte Vecchio, en
+                                                        medio del casco antiguo de la ciudad.
+                                                        <br>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"><br></div>
+                                            <div class="row-fluid">
+                                                <h3>Galería</h3>
+                                                <img src="@routes.Assets.at("img/flo1.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/flo2.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/flo3.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/flo4.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/flo5.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/flo6.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/flo7.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/flo8.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/flo9.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/flo10.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/flo11.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/flo12.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/flo13.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/flo14.jpg")" width="200px" height="150px">
+                                                <img src="@routes.Assets.at("img/flo15.jpg")" width="200px" height="150px">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                            <!--italian end-->
+                            <!--football academia start-->
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                    <span class="icon"></span>
+                                    Football Academia
+                                </a>
+                            </div>
+                            <div id="collapseFour" class="accordion-body collapse">
+                                <div class="accordion-inner man-city">
+                                    <iframe src="https://player.vimeo.com/video/142626686?title=0&byline=0&portrait=0" width="100%" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                    <div class="clearfix"></div>
+                                    <div class="container">
+                                        <div class="row-fluid">
+                                            <div class="col4">
+                                                <div class="logo-container">
+                                                    <h3 class="no-margin">Acreditado por</h3>
+                                                    <img src="@routes.Assets.at("img/eaq.png")">
+                                                    <img src="@routes.Assets.at("img/britcon.png")">
+                                                </div>
+                                                <h3 class="no-margin">¿Qué incluye?</h3>
+                                                <ul class="check-list">
+                                                    <li>Programas de 1 o 2 semanas</li>
+                                                    <li>Alojamiento</li>
+                                                    <li>Transporte desde y hacia la academia</li>
+                                                    <li>Comidas</li>
+                                                    <li>Kit exclusivo de entrenamiento de la escuela Manchester City</li>
+                                                    <li>Todos los materiales requeridos</li>
+                                                    <li>Certificado del programa</li>
+                                                    <li>Ceremonia de entrega de premios al final del programa</li>
+                                                </ul>
+                                                <h3 class="no-margin">Actividades</h3>
+                                                <ul class="activity-list">
+                                                    <li>15 horas de actividades de Inglés vínculadas al fútbol por semana</li>
+                                                    <li>15 horas de entrenamiento de fútbol por semana</li>
+                                                    <li>Actividades nocturnas todas las noches</li>
+                                                    <li>1 excursión por semana</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col8">
+                                                <h3 class="no-margin">Sobre el programa</h3>
+                                                <p class="justify">
+                                                    El programa de fútbol e inglés de Manchester City es
+                                                    una experiencia inmersiva para chicos y chicas de 9 a
+                                                    17 años diseñado para dar una visión de lo que es la
+                                                    vida de un jugador profesional en el Etihad Campus.
+                                                </p>
+                                                <p class="justify">
+
+                                                    La escuela de fútbol del City y Experience English se
+                                                    han unido en el 2015 para brindar una nueva
+                                                    iniciativa que provee a jóvenes jugadores con la
+                                                    oportunidad de mejorar su idioma mientras que se
+                                                    entrena y juega como un profesional de Manchester
+                                                    City.
+                                                </p>
+                                                <p class="justify">
+                                                    Este inovador programa lo integra un equipo profesional
+                                                    de entrenadores  experimentados en la filosifía y
+                                                    metodologías de Manchester City y un equipo de
+                                                    primera calidad de profesores de inglés con pasión
+                                                    por el fútbol.
+                                                </p>
+                                                <img src="@routes.Assets.at("img/manCityBanner1.png")" width="100%">
+                                                <h3 class="no-margin">Galería</h3>
+                                                <img src="https://s3-eu-west-1.amazonaws.com/cityfootball-language/wp-content/uploads/2015/11/15153610/p.10-Connell-College1-400x242.jpg" width="200px" height="150px">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/cityfootball-language/wp-content/uploads/2015/12/17105010/Facilities-Media-Centre-1200x800.jpg" width="200px" height="150px">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/cityfootball-language/wp-content/uploads/2015/11/15153610/Facilities-header-web1.png" width="200px" height="150px">
+                                            </div>
+                                        </div>
+                                        <div class="row-fluid padding-left-10">
+                                            <div class="span1">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/cityfootball-language/wp-content/uploads/2015/12/17104827/Facilities-Etihad-Stadium-1200x800.jpg" width="200px" height="150px">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/cityfootball-language/wp-content/uploads/2015/12/17104836/Facilities-Connell-College-1200x800.jpg" width="200px" height="150px">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/cityfootball-language/wp-content/uploads/2015/12/17104901/Facilities-Academy-pitches-1200x623.jpg" width="200px" height="150px">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/cityfootball-language/wp-content/uploads/2015/11/15153610/Connel-web-31-400x267.png" width="200px" height="150px">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/cityfootball-language/wp-content/uploads/2015/11/15153610/Accommodation-web1-400x266.png" width="200px" height="150px">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/cityfootball-language/wp-content/uploads/2015/11/15153610/Accomm-web-21-400x267.png" width="200px" height="150px">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/cityfootball-language/wp-content/uploads/2015/11/15153610/Accomm-web-11-400x214.png" width="200px" height="150px">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/cityfootball-language/wp-content/uploads/2015/12/17105031/Social-Activities-2-400x300.jpg" width="200px" height="150px">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/cityfootball-language/wp-content/uploads/2015/12/17105038/Social-Activities-1-400x267.jpg" width="200px" height="150px">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/cityfootball-language/wp-content/uploads/2015/11/17110801/p.8-9-Caption-Watching-the-Womens-team-train-and-meeting-them-afterwards-1200x900.jpg" width="200px" height="150px">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/cityfootball-language/wp-content/uploads/2015/11/17110745/p.8-9-Caption-Trying-out-different-football-boots-at-the-Nike-Trial-Van-e1448471549671-1200x732.jpg" width="200px" height="150px">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/cityfootball-language/wp-content/uploads/2015/11/17110840/p.8-9-Caption-Meeting-Vincent-Kompany-1200x819.jpg" width="200px" height="150px">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/cityfootball-language/wp-content/uploads/2015/11/17110808/p.8-9-Caption-Exclusive-shopping-experience-in-the-City-Store-1200x822.jpg" width="200px" height="150px">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/cityfootball-language/wp-content/uploads/2015/11/17110738/p.8-9-Attending-City-Live-1200x702.jpg" width="200px" height="150px">
+                                                <img src="https://s3-eu-west-1.amazonaws.com/cityfootball-language/wp-content/uploads/2015/12/17104741/Excursions-Last-Seasons-Highlights-Replacement-image-for-QA-Session-with-MCWFC-1200x896.jpg" width="200px" height="150px">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
                     </div>
-
-
+                        <!--football academia end-->
                 </div>
-                <div class="clear"></div>
             </div>
+            <div class="clear"></div>
         </div>
-        <!-- end div #main -->
-
+        </div>
+            <!-- end div #main -->
     }

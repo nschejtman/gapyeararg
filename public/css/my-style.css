@@ -179,24 +179,7 @@
 .no-margin{
     margin: 0 !important;
 }
-.london-central h3,.london-central h2 {
-    color: #001b4e;
-    font-family: Poets, BebasNeueRegular, sans-serif;
-}
 
-.alojamiento h5{
-    font-family: Poets, BebasNeueRegular, sans-serif;
-}
-
-.london-eltham h3,.london-eltham h2 {
-    color: rgb(207, 20, 43);
-    font-family: Poets, BebasNeueRegular, sans-serif;
-}
-
-.cambridge h3, .cambridge h2{
-    font-family: Poets, BebasNeueRegular, sans-serif;
-    color: rgb(1, 103, 188);
-}
 
 .agenda-banner{
     font-family: Arial, sans-serif;
@@ -209,7 +192,9 @@
     margin-bottom: 20px;
     margin-top: 20px;
 }
-
+.alojamiento h5{
+    font-family: Poets, BebasNeueRegular, sans-serif;
+}
 .agenda-banner.ab-2{
     background-image: url("../img/agenda_banner.jpg");
     background-position-y: -100px;
@@ -290,15 +275,6 @@ article.small .cat-post-desc h3 {
     width: 62%;
 }
 
-.paris h3,.paris h2 {
-    color: #e9b229;
-    font-family: Poets, BebasNeueRegular, sans-serif;
-}
-
-.florence h3,.florence h2 {
-    color: #009246;
-    font-family: Poets, BebasNeueRegular, sans-serif;
-}
 
 .border{
     border: solid 1px #f0f0f0 !important;
@@ -472,3 +448,7 @@ ul.info * {
     font-family: Timotheos, serif;
 }
 
+/*Logo fix alignment*/
+.logo img{
+    margin-top: 6px;
+}
