@@ -98,7 +98,8 @@
 }
 
 .cn_content.bg-3{
-    background-image: url('https://www.ucmo.edu/studyabroad/events/departure-sign.jpg');
+    background-image: url('../img/jan-march_2017/departures_fixed.jpg');
+    /*background-image: url('https://www.ucmo.edu/studyabroad/events/departure-sign.jpg');*/
     background-size: cover;
 }
 
@@ -195,6 +196,13 @@
 .alojamiento h5{
     font-family: Poets, BebasNeueRegular, sans-serif;
 }
+.agenda-banner.ab-fixed{
+    background-image: url("../img/agenda_banner_fixed_2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
 .agenda-banner.ab-2{
     background-image: url("../img/agenda_banner.jpg");
     background-position-y: -100px;
@@ -296,6 +304,22 @@ article.small .cat-post-desc h3 {
 }
 .margin-top-30{
     margin-top: 30px;
+}
+
+.programs{
+    background-image: url("../img/cork.jpg");
+    background-size: 250px;
+    height: 200px;
+    width: 100%;
+    text-align: justify;
+}
+
+.programs-container{
+    padding: 40px;
+}
+
+.program-title{
+
 }
 
 .countries{
