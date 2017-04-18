@@ -107,12 +107,12 @@
                             </div>
                             <div class="programs">
                                 <div class="programs-container">
-                                        <div class="span3">
-                                            <h5 class="program-title">Summer Soccer Camp</h5>
-                                            <h5 class="program-title">Julio-Agosto 2017 </h5>
-                                        </div>
                                     <div class="span3">
-                                        <img src="@routes.Assets.at("/img/manCityBanner1.png")" width="150%" >
+                                        <h5 class="program-title">Summer Soccer Camp</h5>
+                                        <h5 class="program-title">Julio-Agosto 2017 </h5>
+                                    </div>
+                                    <div class="span3">
+                                        <img src="@routes.Assets.at("/img/manCityBanner1.png")" class="program-img">
                                     </div>
                                 </div>
                             </div>
@@ -131,7 +131,10 @@
                             </div>
                             <div class="row-fluid"> 
                                 <div class="span1"> 
-                                    <div class="agenda-banner ab-fixed">Nuestros Viajeros </div> 
+                                    <div class="agenda-banner ab-fixed">
+                                        Nuestros Viajeros
+                                        <div></div>
+                                    </div> 
                                     <div class="row-fluid">
                                         <div class="span3">
                                             <img src="@routes.Assets.at("/img/home_pics_2017/pic_1.jpg")" class="gallery-img" width="200px" height="150px" data-toggle="modal" data-target="#gallery-modal"  onclick="showInModal(1)">
@@ -193,14 +196,12 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Nuestros viajeros</h4>
+                                <h4 class="modal-title modal-gallery-title">Nuestros viajeros</h4>
                             </div>
                         </div>
                         <div class="modal-body">
                             <div class="row">
-                                <div class="col-md-2 col-md-offset-5">
-                                    <img id="modal-img">
-                                </div>
+                                    <img id="modal-img" class="modal-gallery-img">
                             </div>
                         </div>
                         <div class="modal-footer">

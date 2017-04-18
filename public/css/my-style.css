@@ -83,6 +83,39 @@
     .input-control{
         width: 80%;
     }
+
+    .program-img{
+        width: 100%;
+        margin-right: 20px;
+        margin-left: 20px;
+        display: inline-block;
+    }
+
+    .agenda-banner{
+        font-family: Arial, sans-serif;
+        color: white;
+        font-weight: bolder;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+        text-shadow: 2px 2px 10px #000000;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .modal-gallery-title{
+        padding-left:35%;
+    }
+
+    .modal-gallery-img{
+        width: 350px;
+        height: 350px;
+        padding-left: 15%;
+    }
+
+    .modal-footer{
+        padding-right: 35%;
+    }
 }
 
 .cn_content.bg-1{
@@ -181,18 +214,6 @@
     margin: 0 !important;
 }
 
-
-.agenda-banner{
-    font-family: Arial, sans-serif;
-    color: white;
-    font-weight: bolder;
-    font-size: 60px;
-    text-align: center;
-    padding: 40px;
-    text-shadow: 2px 2px 10px #000000;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
 .alojamiento h5{
     font-family: Poets, BebasNeueRegular, sans-serif;
 }
@@ -314,11 +335,39 @@ article.small .cat-post-desc h3 {
     text-align: justify;
 }
 
-.programs-container{
-    padding: 40px;
-}
+@media screen and (min-width: 720px){
+    .programs-container{
+        padding: 40px;
+    }
 
-.program-title{
+    .program-img{
+        width: 150%;
+        margin-right: 20px;
+        margin-left: 20px;
+        display: inline-block;
+    }
+
+    .agenda-banner{
+        font-family: Arial, sans-serif;
+        color: white;
+        font-weight: bolder;
+        font-size: 60px;
+        text-align: center;
+        padding: 40px;
+        text-shadow: 2px 2px 10px #000000;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .modal-gallery-title{
+        padding-left:35%;
+    }
+
+    .modal-gallery-img{
+        width: 350px;
+        height: 350px;
+        padding-left: 15%;
+    }
 
 }
 
@@ -475,4 +524,8 @@ ul.info * {
 /*Logo fix alignment*/
 .logo img{
     margin-top: 6px;
+}
+
+.gallery-img:hover{
+    opacity: 0.7;
 }
