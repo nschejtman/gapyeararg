@@ -1,5 +1,44 @@
 @(day: String, month: String, year: String)
-    @nav() {
+
+@js = {
+    <script type="text/javascript">
+            MODAL_IMG_INDEX = 1;
+
+            function showInModal(n){
+                MODAL_IMG_INDEX = n;
+                images = $(".gallery-img");
+                modal_img = $("#modal-img");
+
+                $(modal_img).attr("src",images[n-1].src);
+            }
+
+            function nextImg(n) {
+                size = $(".gallery-img").size();
+
+                new_index = MODAL_IMG_INDEX + n;
+                if(new_index < 1)
+                    showInModal(size);
+                else if(new_index > size)
+                    showInModal(new_index - size);
+                else
+                    showInModal(new_index)
+            }
+    </script>
+
+    <script type="text/javascript">
+            function getFBDataWidth(){
+                var w = $(window).width();
+                return w < 700 ? 280 : 343;
+            }
+
+            $(document).ready(function () {
+                fb_div_size = getFBDataWidth();
+                $('.fb-page').attr('data-width', fb_div_size);
+            });
+    </script>
+
+}
+    @nav(js) {
 
         <!-- start slider -->
         <div class="cn_wrapper">
@@ -186,8 +225,6 @@
                                     </div>  
                                 </div> 
                             </div>
-
-                            <hr>
                         </div>
                     </div>
                 </div>
@@ -457,29 +494,5 @@
             <!-- AddThis (share buttons) -->
             <!-- Go to www.addthis.com/dashboard to customize your tools -->
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-558a92fe0c1888b0" async="async"></script>
-
-        <script>
-            MODAL_IMG_INDEX = 1;
-
-            function showInModal(n){
-                MODAL_IMG_INDEX = n;
-                images = $(".gallery-img");
-                modal_img = $("#modal-img");
-
-                $(modal_img).attr("src",images[n-1].src);
-            }
-
-            function nextImg(n) {
-                size = $(".gallery-img").size();
-
-                new_index = MODAL_IMG_INDEX + n;
-                if(new_index < 1)
-                    showInModal(size);
-                else if(new_index > size)
-                    showInModal(new_index - size);
-                else
-                    showInModal(new_index)
-            }
-        </script>
 
     }

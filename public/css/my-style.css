@@ -76,7 +76,7 @@
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 768px){
     #contact-form{
         padding: 0;
     }
@@ -333,7 +333,7 @@ article.small .cat-post-desc h3 {
     text-align: justify;
 }
 
-@media screen and (min-width: 720px){
+@media screen and (min-width: 768px){
     .programs-container{
         padding: 40px;
     }
